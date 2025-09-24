@@ -74,7 +74,8 @@ set(${PYWRAP}_HEADERS
     ../../include/tsid/bindings/python/utils/container.hpp)
 
 add_library(${PYWRAP} SHARED ${${PYWRAP}_SOURCES} ${${PYWRAP}_HEADERS})
-target_link_libraries(${PYWRAP} PUBLIC ${PROJECT_NAME} eigenpy::eigenpy)
+target_link_libraries(${PYWRAP} PUBLIC ${PROJECT_NAME}::${PROJECT_NAME}
+                                       eigenpy::eigenpy)
 
 if(IS_ABSOLUTE ${PYTHON_SITELIB})
   set(${PYWRAP}_INSTALL_DIR ${PYTHON_SITELIB}/${PROJECT_NAME})
