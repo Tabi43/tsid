@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 - Fix value of nEq when removeRigidContact for contact with priority > 0
+- update jrl-cmakemodules to v1
+- CMake: honor BUILD_STANDALONE_PYTHON_INTERFACE option
 
 ## [1.8.0] - 2025-03-29
 
